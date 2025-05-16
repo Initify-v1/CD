@@ -1,0 +1,23 @@
+apiVersion: pipecd.dev/v1beta1
+kind: Piped
+spec:
+  projectID: quickstart
+  # FIXME: Replace here with your piped ID.
+  pipedID: aee5d3f2-e622-4b6b-b9e5-8dcca34c0f50
+  # Base64 encoded string of the piped private key.
+  # FIXME: Replace here with your piped base64 key.
+  pipedKeyData: ajFvdGtocTI4Mnp3OGh3ZThqM2p5aDA0cmVwZ3RqZTVxZnl5djVqMWg3bHB1ZDQxdXE=
+  # Write in a format like "host:443" because the communication is done via gRPC.
+  # FIXME: Replace here with your piped address if you connect Piped to a control plane that does not run locally.
+  apiAddress: localhost:8080
+  repositories:
+  - repoId: CD
+    remote: git@github.com:niladrix719/CD.git
+    branch: main
+  syncInterval: 1m
+  platformProviders:
+  - name: my-cloudrun
+    type: CLOUDRUN
+    config:
+      project: us-docker.pkg.dev/cloudrun/container/hello@sha256:be22439cc62cd7a4b4bae5d42dad9d941a43cf6caa2698a0cd82dfdabcff28ab
+      region: europe-west1
