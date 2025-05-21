@@ -9,4 +9,4 @@ spec:
     stages:
       - name: CLOUDRUN_PROMOTE
         with:
-          percent: 30
+          percent: 100
