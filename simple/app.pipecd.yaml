@@ -8,4 +8,4 @@ spec:
         with:
           percent: 30
   description: |
-    This app demonstrates how to deploy a Cloud Run application with Canary.
+    This app demonstrates how to deploy a Cloud Run application with Canary
