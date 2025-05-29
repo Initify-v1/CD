@@ -9,15 +9,15 @@ spec:
           percent: 10
       - name: WAIT
         with:
-          duration: 30s
+          duration: 5s
       - name: CLOUDRUN_PROMOTE
         with:
           percent: 50
       - name: WAIT
         with:
-          duration: 30s
+          duration: 5s
       - name: CLOUDRUN_PROMOTE
         with:
           percent: 100
   description: |
-    This app demonstrates how to deploy a Cloud Run application with Canary
+    This app demonstrates how to deploy a Cloud Run application with Canary.
