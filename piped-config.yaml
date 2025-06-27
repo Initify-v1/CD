@@ -3,16 +3,16 @@ kind: Piped
 spec:
   projectID: quickstart
   # FIXME: Replace here with your piped ID.
-  pipedID: b391f243-a5b9-4c11-be48-12fedf50e167
+  pipedID: ccf57aed-d570-4417-bfc4-670c98c5128e
   # Base64 encoded string of the piped private key.
   # FIXME: Replace here with your piped base64 key.
-  pipedKeyData: bXplM3pzNXo2cGx4MzA4NXl6MWRlamN1OHd5eGFrNWkxZTJzN3c2eG9ka29kNHFiZzk=
+  pipedKeyData: M2Ztd2MwdzF4MW90MWI5c2U5cjh5YWJ0amthcm4yNTAyOGRjNnF5NDFhcXQ2Y3VwbnU=
   # Write in a format like "host:443" because the communication is done via gRPC.
   # FIXME: Replace here with your piped address if you connect Piped to a control plane that does not run locally.
   apiAddress: localhost:8080
   repositories:
   - repoId: CD
-    remote: https://github.com/Initify-v1/CD.git
+    remote: https://github.com/Initify-v1/CD-test.git
     branch: main
   syncInterval: 1m
   platformProviders:
